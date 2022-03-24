@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- HEAD COLORS -->
+    <color name="purple">#7C4DFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#fd4717</color>
+
+    <!-- CONFIG COLORS -->
+    <color name="purple_dark">#FF3700B3</color>
+    <color name="blueberry">#477DFD</color>
+    <color name="grey">#BBBBBC</color>
+    <color name="green">#4CD964</color>
+    <color name="green_cyan">#2dbba6</color>
+</resources>
