@@ -1,16 +1,18 @@
 <resources>
-    <string name="app_name">LugLoc</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name" translatable="false">LugLoc</string>
+
+    <!-- startup -->
+    <string name="startup_signup">Sign up now!</string>
+    <string name="startup_go_login">Already have an account? Log in here</string>
 
     <!-- startup home -->
-    <string name="startup_home_fragment">El localizador global para todo lo que amas</string>
-    <string name="startup_home_signup_fragment">¡Regìstrate ahora!</string>
-    <string name="startup_home_login_fragment">¿Ya tienes una cuenta? Entra </string>
-    <string name="startup_GSM_fragment">No importa lo lejos que estés, GEGO contiene una SIM card con cobertura mundial incluida</string>
-    <string name="startup_sec_zone_fragment">Recibe notificaciones en tiempo real cuando un GEGO entra o sale de zonas seguras</string>
+    <string name="startup_home_message">The global tracker for everything you love</string>
 
+    <!-- startup Security Zone -->
+    <string name="startup_security_zone_title">Safe locations</string>
+    <string name="startup_security_zone_message">Get realtime notifications when a GEGO leaves or enters locations that you define as safe</string>
 
+    <!-- startup GSM -->
+    <string name="startup_GSM_title">GSM enabled</string>
+    <string name="startup_GSM_message">No matter how far it is, every GEGO has a SIM card with worldwide coverage included</string>
 </resources>

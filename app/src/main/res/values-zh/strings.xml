@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">LugLoc</string>
+    <!-- startup -->
+    <string name="startup_signup">立即註冊</string>
+    <string name="startup_go_login">已經有一個帳戶？在此登錄</string>
+
+    <!-- startup home -->
+    <string name="startup_home_message">對你的愛一切的全球跟踪器</string>
+
+    <!-- startup Security Zone -->
+    <string name="startup_security_zone_title">安全地點</string>
+    <string name="startup_security_zone_message">獲取實時通知時格戈樹葉或進入位置，你定義為安全</string>
+
+    <!-- startup GSM -->
+    <string name="startup_GSM_title">啟用GSM</string>
+    <string name="startup_GSM_message">不管有多遠，每格戈擁有覆蓋全球的SIM卡包括</string>
 </resources>

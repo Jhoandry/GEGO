@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">LugLoc</string>
+    <!-- startup -->
+    <string name="startup_signup">S\’inscrire maintenant!</string>
+    <string name="startup_go_login">Vous avez déjà un compte? Connectez-vous ici</string>
+
+    <!-- startup home -->
+    <string name="startup_home_message">Le suivi global pour tout ce que vous aimez</string>
+
+    <!-- startup Security Zone -->
+    <string name="startup_security_zone_title">Endroits sûrs</string>
+    <string name="startup_security_zone_message">Notifications en temps réel quand obtenir un GEGO quitte ou pénètre dans des endroits que vous définissez comme sûr</string>
+
+    <!-- startup GSM -->
+    <string name="startup_GSM_title">GSM activé</string>
+    <string name="startup_GSM_message">Peu importe à quel point il est, chaque GEGO dispose d\’une carte SIM avec une couverture dans le monde entier inclus</string>
+
 </resources>
