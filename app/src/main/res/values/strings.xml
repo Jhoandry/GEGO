@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">LugLoc</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- startup home -->
+    <string name="startup_home_fragment">El localizador global para todo lo que amas</string>
+    <string name="startup_home_signup_fragment">¡Regìstrate ahora!</string>
+    <string name="startup_home_login_fragment">¿Ya tienes una cuenta? Entra </string>
+    <string name="startup_GSM_fragment">No importa lo lejos que estés, GEGO contiene una SIM card con cobertura mundial incluida</string>
+    <string name="startup_sec_zone_fragment">Recibe notificaciones en tiempo real cuando un GEGO entra o sale de zonas seguras</string>
+
+
 </resources>
