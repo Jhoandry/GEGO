@@ -8,10 +8,22 @@
     <string name="startup_home_message">El localizador global para todo lo que amas</string>
 
     <!-- startup Security Zone -->
-    <string name="startup_security_zone_title">Zona seqgura</string>
+    <string name="startup_security_zone_title">Zona segura</string>
     <string name="startup_security_zone_message">Recibe notificaciones en tiempo real cuando un GEGO entra o sale de zonas seguras</string>
 
     <!-- startup GSM -->
     <string name="startup_GSM_title">GSM activado</string>
     <string name="startup_GSM_message">No importa lo lejos que estés, GEGO contiene una SIM card con cobertura mundial incluida</string>
+
+    <!-- signup -->
+    <string name="signup_register_title">Regístrate</string>
+    <string name="signup_register_message">Por favor crea una cuenta para empezar a utilizar GEGO</string>
+    <string name="signup_register_conditions">Al crear una cuenta estas aceptando nuestros</string>
+    <string name="signup_register_email">Correo electronico</string>
+    <string name="signup_register_next">Siguiente</string>
+
+    <!-- signup - email - step -->
+    <string name="sig">GSM activado</string>
+
+
 </resources>

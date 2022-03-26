@@ -1,14 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EmailStepFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/logging_fragment"
+    tools:context=".StartupHomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right_summary"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
 
-</FrameLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="@id/guideline_right_summary"
+        app:layout_constraintEnd_toEndOf="@id/guideline_left_summary"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/login_data_input">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/grey"
+            android:gravity="center"
+            android:text="@string/signup_register_title"
+            android:textSize="@dimen/text_size_14"
+            android:id="@+id/register_text"/>
+
+        <ProgressBar
+            android:id="@+id/determinateBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:progressBackgroundTint="@color/grey"
+            android:progressTint="@color/purple"
+            android:progress="0"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/grey"
+            android:gravity="center"
+            android:text="@string/signup_register_message"
+            android:textSize="@dimen/text_size_14"
+            android:id="@+id/signup_register_message" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/grey"
+            android:gravity="left"
+            android:text="@string/signup_register_email"
+            android:textSize="@dimen/text_size_14"
+            android:id="@+id/signup_register_email" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signup_register_email"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/grey"
+            android:gravity="center"
+            android:text="@string/signup_register_conditions"
+            android:textSize="@dimen/text_size_12"
+            android:id="@+id/home_text" />
+
+        <Button
+            app:layout_constraintTop_toBottomOf="@id/btn_signup_action"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dw_background_gradient_purple"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/signup_register_next"
+            android:id="@+id/btn_signup_action" />
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
