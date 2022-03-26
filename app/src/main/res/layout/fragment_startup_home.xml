@@ -31,7 +31,7 @@
         android:id="@+id/login_data_input">
 
     <ImageView
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="290dp"
         android:layout_marginBottom="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,12 +43,13 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="15dp"
+            android:layout_height="30dp"
             android:layout_marginTop="2dp"
             android:textColor="@color/white"
             android:gravity="center"
-            android:text="@string/startup_home_fragment"
-            android:textSize="@dimen/text_size_12" />
+            android:text="@string/startup_home_message"
+            android:textSize="@dimen/text_size_12"
+            android:id="@+id/home_text" />
 
         <Button
             app:layout_constraintTop_toBottomOf="@id/btn_signup_action"
@@ -56,19 +57,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/dw_background_gradient_purple"
-            android:text="@string/startup_home_signup_fragment"
+            android:text="@string/startup_signup"
             android:gravity="center"
             android:textColor="@color/white"
-            android:id="@+id/btn_signup_action"/>
+            android:id="@+id/btn_signup_action" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="15dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="25dp"
             android:textColor="@color/white"
             android:gravity="center"
-            android:text="@string/startup_home_fragment"
-            android:textSize="@dimen/text_size_12" />
+            android:text="@string/startup_go_login"
+            android:textSize="@dimen/text_size_12"
+            android:id="@+id/home_login_text" />
 
 
     </LinearLayout>

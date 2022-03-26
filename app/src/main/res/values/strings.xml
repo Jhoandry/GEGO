@@ -15,4 +15,6 @@
     <!-- startup GSM -->
     <string name="startup_GSM_title">GSM enabled</string>
     <string name="startup_GSM_message">No matter how far it is, every GEGO has a SIM card with worldwide coverage included</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
