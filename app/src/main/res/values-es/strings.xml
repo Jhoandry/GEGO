@@ -19,11 +19,17 @@
     <string name="signup_register_title">Regístrate</string>
     <string name="signup_register_message">Por favor crea una cuenta para empezar a utilizar GEGO</string>
     <string name="signup_register_conditions">Al crear una cuenta estas aceptando nuestros</string>
+
+    <!-- signup - register - email -->
     <string name="signup_register_email">Correo electronico</string>
     <string name="signup_register_next">Siguiente</string>
 
-    <!-- signup - email - step -->
-    <string name="sig">GSM activado</string>
+    <!-- signup - register - name -->
+    <string name="signup_register_name">Nombre Completo</string>
+
+    <!-- signup - register - password -->
+    <string name="signup_register_password">Crea una Password</string>
+    <string name="signup_register_password_conditions">Usa un mínimo de 8 caracteres</string>
 
 
 </resources>
