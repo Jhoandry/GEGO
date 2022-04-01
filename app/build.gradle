@@ -17,10 +17,28 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    flavorDimensions "default_dimension"
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            output.outputFileName = "${versionName}-${applicationId}.apk"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
+            debuggable false
+            buildConfigField "String", "SERVER_URL", SERVER_URL_RELEASE
+            buildConfigField "String", "PLATFORM", PLATFORM
+            buildConfigField "String", "CLIENT_ID", GEGO_CLIENT_ID
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+            applicationIdSuffix ".debug"
+            buildConfigField "String", "SERVER_URL", SERVER_URL_DEBUG
+            buildConfigField "String", "PLATFORM", PLATFORM
+            buildConfigField "String", "CLIENT_ID", GEGO_CLIENT_ID
         }
     }
     compileOptions {
@@ -47,6 +65,16 @@ dependencies {
     // Navigation dependencies
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // Retrofit dependencies (HTTP request)
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation "com.squareup.okhttp3:logging-interceptor:3.11.0"
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+
+    // Koin dependencies
+    implementation "org.koin:koin-androidx-scope:$koin_version"
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
 }
 
 apply plugin: 'com.android.application'
