@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- buttons -->
+    <string name="btn_next">Suivant</string>
+    <string name="btn_done">Terminé</string>
+
     <!-- startup -->
     <string name="startup_signup">S\’inscrire maintenant!</string>
     <string name="startup_go_login">Vous avez déjà un compte? Connectez-vous ici</string>
@@ -7,12 +11,35 @@
     <!-- startup home -->
     <string name="startup_home_message">Le suivi global pour tout ce que vous aimez</string>
 
-    <!-- startup Security Zone -->
-    <string name="startup_security_zone_title">Endroits sûrs</string>
-    <string name="startup_security_zone_message">Notifications en temps réel quand obtenir un GEGO quitte ou pénètre dans des endroits que vous définissez comme sûr</string>
+    <!-- startup safe Zone -->
+    <string name="startup_safe_zone_title">Endroits sûrs</string>
+    <string name="startup_safe_zone_message">Notifications en temps réel quand obtenir un GEGO quitte ou pénètre dans des endroits que vous définissez comme sûr</string>
 
     <!-- startup GSM -->
     <string name="startup_GSM_title">GSM activé</string>
     <string name="startup_GSM_message">Peu importe à quel point il est, chaque GEGO dispose d\’une carte SIM avec une couverture dans le monde entier inclus</string>
 
+    <!-- signup -->
+    <string name="signup_register_title">S\’inscrire</string>
+    <string name="signup_register_message">S\’il vous plaît créer un compte pour commencer à utiliser votre GEGO</string>
+    <string name="signup_register_conditions">En créant un compte, vous acceptez nos</string>
+    <string name="signup_register_conditions_terms">Termes et conditions</string>
+    <string name="signup_register_conditions_separator">et</string>
+    <string name="signup_register_conditions_privacy">Politique de confidentialité</string>
+
+    <!-- signup - register - email -->
+    <string name="signup_register_email">Entrer votre Email</string>
+
+    <!-- signup - register - name -->
+    <string name="signup_register_name">Entrez votre nom</string>
+
+    <!-- signup - register - password -->
+    <string name="signup_register_password">Créer un mot de passe</string>
+    <string name="signup_register_password_conditions">8 caractères minimum</string>
+
+    <!-- login -->
+    <string name="login_title">S\’identifier</string>
+    <string name="login_email">Entrer votre Email</string>
+    <string name="login_password">Tapez votre mot de passe</string>
+    <string name="login_forgot_password">Mot de passe oublié?</string>
 </resources>

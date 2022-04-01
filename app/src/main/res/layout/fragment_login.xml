@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/logging_fragment"
-    tools:context="activities.signup.PasswordStepFragment">
+    tools:context="activities.login.LoginFragment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_left_summary"
@@ -39,7 +39,7 @@
         app:layout_constraintStart_toStartOf="@id/guideline_left_summary"
         app:layout_constraintEnd_toEndOf="@id/guideline_right_summary"
         app:layout_constraintTop_toTopOf="@id/guideline_start_content_summary"
-        app:layout_constraintBottom_toTopOf="@id/btn_go_done"
+        app:layout_constraintBottom_toTopOf="@id/btn_go_next"
         android:layout_width="@dimen/general_0dp"
         android:layout_height="@dimen/general_0dp"
         android:orientation="vertical"
@@ -50,31 +50,29 @@
             android:layout_height="wrap_content"
             android:textColor="@color/grey"
             android:gravity="center"
-            android:text="@string/signup_register_title"
+            android:text="@string/login_title"
             android:textSize="@dimen/text_size_16"
             android:id="@+id/register_text"/>
 
         <ProgressBar
-            android:progress="75"
+            android:progress="0"
             style="@style/registerProgressBar"
             android:id="@+id/progress_bar"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/general_20dp"
-            android:textColor="@color/grey"
-            android:gravity="center"
-            android:text="@string/signup_register_message"
-            android:textSize="@dimen/text_size_16"
-            android:id="@+id/signup_register_message" />
-
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/ti_email"
             android:layout_marginTop="@dimen/signup_input_margin_top"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/signup_register_password"
+            android:hint="@string/login_email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/ti_password"
+            android:layout_marginTop="@dimen/general_20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_password"
             android:inputType="textPassword" />
 
         <TextView
@@ -83,7 +81,7 @@
             android:layout_marginTop="@dimen/general_5dp"
             android:textColor="@color/grey"
             android:gravity="left"
-            android:text="@string/signup_register_password_conditions"
+            android:text="@string/login_forgot_password"
             android:textSize="@dimen/text_size_12"
             android:id="@+id/password_text" />
     </LinearLayout>
@@ -95,7 +93,7 @@
         android:layout_width="@dimen/general_0dp"
         android:layout_height="@dimen/startup_signup_button_height"
         style="@style/purpleGradientButton"
-        android:text="@string/btn_done"
-        android:id="@+id/btn_go_done"/>
+        android:text="@string/btn_next"
+        android:id="@+id/btn_go_next"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

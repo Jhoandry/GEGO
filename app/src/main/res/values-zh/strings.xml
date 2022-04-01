@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- buttons -->
+    <string name="btn_next">下一個</string>
+    <string name="btn_done">完成</string>
+
     <!-- startup -->
     <string name="startup_signup">立即註冊</string>
     <string name="startup_go_login">已經有一個帳戶？在此登錄</string>
@@ -7,11 +11,35 @@
     <!-- startup home -->
     <string name="startup_home_message">對你的愛一切的全球跟踪器</string>
 
-    <!-- startup Security Zone -->
-    <string name="startup_security_zone_title">安全地點</string>
-    <string name="startup_security_zone_message">獲取實時通知時格戈樹葉或進入位置，你定義為安全</string>
+    <!-- startup safe Zone -->
+    <string name="startup_safe_zone_title">安全地點</string>
+    <string name="startup_safe_zone_message">獲取實時通知時格戈樹葉或進入位置，你定義為安全</string>
 
     <!-- startup GSM -->
     <string name="startup_GSM_title">啟用GSM</string>
     <string name="startup_GSM_message">不管有多遠，每格戈擁有覆蓋全球的SIM卡包括</string>
+
+    <!-- signup -->
+    <string name="signup_register_title">註冊</string>
+    <string name="signup_register_message">請創建一個帳戶，開始使用您的格戈</string>
+    <string name="signup_register_conditions">通過創建一個帳戶，您接受我們的</string>
+    <string name="signup_register_conditions_terms">條款和條件</string>
+    <string name="signup_register_conditions_separator">和</string>
+    <string name="signup_register_conditions_privacy">隱私政策</string>
+
+    <!-- signup - register - email -->
+    <string name="signup_register_email">輸入你的電子郵箱</string>
+
+    <!-- signup - register - name -->
+    <string name="signup_register_name">輸入你的名字</string>
+
+    <!-- signup - register - password -->
+    <string name="signup_register_password">創建一個密碼</string>
+    <string name="signup_register_password_conditions">最少8個字符</string>
+
+    <!-- login -->
+    <string name="login_title">登錄</string>
+    <string name="login_email">輸入你的電子郵箱l</string>
+    <string name="login_password">輸入您的密碼</string>
+    <string name="login_forgot_password">忘記密碼了嗎？</string>
 </resources>

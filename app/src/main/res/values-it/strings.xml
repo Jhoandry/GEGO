@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- buttons -->
+    <string name="btn_next">Seguente</string>
+    <string name="btn_done">Fatto</string>
+
     <!-- startup -->
     <string name="startup_signup">Iscriviti ora!</string>
     <string name="startup_go_login">Hai già un account? Entra qui</string>
@@ -7,11 +11,35 @@
     <!-- startup home -->
     <string name="startup_home_message">Il tracker globale per tutto ciò che ami</string>
 
-    <!-- startup Security Zone -->
-    <string name="startup_security_zone_title">Luoghi sicuri</string>
-    <string name="startup_security_zone_message">Ricevi notifiche in tempo reale quando un Gego lascia o entra in posizioni che si definiscono come sicuro</string>
+    <!-- startup safe Zone -->
+    <string name="startup_safe_zone_title">Luoghi sicuri</string>
+    <string name="startup_safe_zone_message">Ricevi notifiche in tempo reale quando un Gego lascia o entra in posizioni che si definiscono come sicuro</string>
 
     <!-- startup GSM -->
     <string name="startup_GSM_title">GSM abilitato</string>
     <string name="startup_GSM_message">Non importa quanto lontano è, ogni GEGO ha una scheda SIM con copertura mondiale incluso</string>
+
+    <!-- signup -->
+    <string name="signup_register_title">Iscriviti</string>
+    <string name="signup_register_message">Si prega di creare un account per iniziare a utilizzare il GEGO</string>
+    <string name="signup_register_conditions">Con la creazione di un account utente accetta la nostra</string>
+    <string name="signup_register_conditions_terms">Termini e condizioni</string>
+    <string name="signup_register_conditions_separator">e</string>
+    <string name="signup_register_conditions_privacy">Politica sulla riservatezza</string>
+
+    <!-- signup - register - email -->
+    <string name="signup_register_email">Inserisci il tuo indirizzo email</string>
+
+    <!-- signup - register - name -->
+    <string name="signup_register_name">Inserisci il tuo nome</string>
+
+    <!-- signup - register - password -->
+    <string name="signup_register_password">Crea una password</string>
+    <string name="signup_register_password_conditions">Minimo 8 caratteri</string>
+
+    <!-- login -->
+    <string name="login_title">Accesso</string>
+    <string name="login_email">Inserisci il tuo indirizzo email</string>
+    <string name="login_password">Inserisci la tua password</string>
+    <string name="login_forgot_password">Hai dimenticato la password?</string>
 </resources>

@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">LugLoc</string>
 
+    <!-- buttons -->
+    <string name="btn_next">Next</string>
+    <string name="btn_done">Done</string>
+
     <!-- startup -->
     <string name="startup_signup">Sign up now!</string>
     <string name="startup_go_login">Already have an account? Log in here</string>
@@ -8,22 +12,24 @@
     <!-- startup home -->
     <string name="startup_home_message">The global tracker for everything you love</string>
 
-    <!-- startup Security Zone -->
-    <string name="startup_security_zone_title">Safe locations</string>
-    <string name="startup_security_zone_message">Get realtime notifications when a GEGO leaves or enters locations that you define as safe</string>
+    <!-- startup safe Zone -->
+    <string name="startup_safe_zone_title">Safe locations</string>
+    <string name="startup_safe_zone_message">Get realtime notifications when a GEGO leaves or enters locations that you define as safe</string>
 
     <!-- startup GSM -->
     <string name="startup_GSM_title">GSM enabled</string>
     <string name="startup_GSM_message">No matter how far it is, every GEGO has a SIM card with worldwide coverage included</string>
 
     <!-- signup -->
-    <string name="signup_register_title">Register</string>
-    <string name="signup_register_message">Please create an account to start using GEGO</string>
-    <string name="signup_register_conditions">When you create an account you are accepting our</string>
+    <string name="signup_register_title">Sign up</string>
+    <string name="signup_register_message">Please create an account to start using your GEGO</string>
+    <string name="signup_register_conditions">By creating an account you are accepting our</string>
+    <string name="signup_register_conditions_terms">Terms and Conditions</string>
+    <string name="signup_register_conditions_separator">and</string>
+    <string name="signup_register_conditions_privacy">Privacy Policy</string>
 
     <!-- signup - register - email -->
-    <string name="signup_register_email">Email Address</string>
-    <string name="signup_register_next">Next</string>
+    <string name="signup_register_email">Enter your email</string>
 
     <!-- signup - register - name -->
     <string name="signup_register_name">Full Name</string>
@@ -31,6 +37,10 @@
     <!-- signup - register - password -->
     <string name="signup_register_password">Create a Password</string>
     <string name="signup_register_password_conditions">At least 8 characters</string>
-    <string name="signup_register_password_done">Done</string>
 
+    <!-- login -->
+    <string name="login_title">Log In</string>
+    <string name="login_email">Enter your email</string>
+    <string name="login_password">Enter your password</string>
+    <string name="login_forgot_password">Forgot your password?</string>
 </resources>

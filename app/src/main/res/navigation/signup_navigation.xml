@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/signup_navigation"
+    app:startDestination="@id/emailStepFragment">
+
+    <fragment
+        android:id="@+id/emailStepFragment"
+        android:name="com.lugloc.activities.signup.EmailStepFragment"
+        android:label="EmailStepFragment" >
+        <action
+            android:id="@+id/action_emailStepFragment_to_nameStepFragment"
+            app:destination="@id/nameStepFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nameStepFragment"
+        android:name="com.lugloc.activities.signup.NameStepFragment"
+        android:label="NameStepFragment" >
+        <action
+            android:id="@+id/action_nameStepFragment_to_passwordStepFragment"
+            app:destination="@id/passwordStepFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordStepFragment"
+        android:name="com.lugloc.activities.signup.PasswordStepFragment"
+        android:label="PasswordStepFragment" >
+        <action
+            android:id="@+id/action_passwordStepFragment_to_register_device_navigation"
+            app:destination="@id/register_device_navigation" />
+    </fragment>
+    <include app:graph="@navigation/new_device_navigation" />
+</navigation>

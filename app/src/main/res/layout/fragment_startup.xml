@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/logging_fragment"
+    tools:context=".activities.StartupFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start_content_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65"/>
+
+    <androidx.viewpager.widget.ViewPager
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/vw_startup_background"/>
+
+    <com.viewpagerindicator.CirclePageIndicator
+        app:layout_constraintStart_toStartOf="@id/guideline_right_summary"
+        app:layout_constraintEnd_toEndOf="@id/guideline_left_summary"
+        app:layout_constraintTop_toBottomOf="@id/guideline_start_content_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/general_10dp"
+        app:radius="@dimen/general_5dp"
+        app:fillColor="@color/white"
+        app:pageColor="@color/purple_soft_magenta"
+        app:strokeColor="@color/grey"
+        app:strokeWidth="@dimen/general_0dp"
+        android:id="@+id/cv_startup_step"/>
+
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="@id/guideline_left_summary"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right_summary"
+        app:layout_constraintTop_toBottomOf="@id/cv_startup_step"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/general_40dp"
+        android:layout_width="@dimen/general_0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/l_startup_options">
+
+        <Button
+            android:text="@string/startup_signup"
+            android:layout_width="@dimen/startup_signup_button_width"
+            android:layout_height="@dimen/startup_signup_button_height"
+            style="@style/purpleGradientButton"
+            android:id="@+id/btn_signup_action"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/general_20dp"
+            android:layout_marginBottom="@dimen/general_20dp"
+            android:gravity="center"
+            android:text="@string/startup_go_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            android:id="@+id/tv_go_login" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
